@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+    color: white;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.left{
+    width: 40%;
+    height: 100%;
+    background-color: #333533
+    
+}
+
+.right{
+    width: 60%;
+    height: 100%;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.nav i{
+    color: royalblue;
+    margin-right: 10px;
+}
+
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    margin-top:200px;
+}
+
+.text h1{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+
+.p{
+    opacity: 0.6;
+    color: white;
+}
+
+.border{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+    font-size: 18px;
+    font-weight: 600;
+    color: white
+}
+
+.r1{
+    width: 100%;
+    height: 45%;
+    display: flex;
+}
+
+.r2{
+    width: 100%;
+    height: 55%;
+    background-image: url(https://wallpapercave.com/dwp1x/wp6904106.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+
+.div1{
+    width: 50%;
+    height: 100%;
+   background-size: cover;
+   background-position: center;
+    background-image: url(https://images.unsplash.com/photo-1611526114392-8d8e229f511d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJhdG1hbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+}
+
+.div2{
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1555122125-4cf56fea8853?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1861&q=80);
+    background-size: cover;
+    background-position: center;    
+}
+
+
+@media screen and (max-width: 600px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #333533
+    }
+
+ 
+
+    .nav a,i{
+        margin-left: 55px;
+    }
+
+    .text{
+        gap:20px;
+        margin-top:15px;
+    }
+
+    .p{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    .border{
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+}
